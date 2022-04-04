@@ -9,6 +9,7 @@ var h = document.documentElement,
 var scrollpos = window.scrollY;
 var header = document.getElementById('header');
 var navcontent = document.getElementById('nav-content');
+var toggle = document.getElementById('nav-toggle');
 
 document.addEventListener('scroll', function () {
     /*Refresh scroll % width*/
@@ -17,6 +18,8 @@ document.addEventListener('scroll', function () {
 
     /*Apply classes for slide in bar*/
     scrollpos = window.scrollY;
+
+    if (!header || !navcontent) return;
 
     if (scrollpos > 10) {
         header.classList.add('bg-white');
@@ -32,6 +35,8 @@ document.addEventListener('scroll', function () {
 });
 
 //Javascript to toggle the menu
-document.getElementById('nav-toggle').onclick = function () {
-    document.getElementById('nav-content').classList.toggle('hidden');
-};
+if (toggle) {
+    toggle.onclick = function () {
+        document.getElementById('nav-content').classList.toggle('hidden');
+    };
+}
