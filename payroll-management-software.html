@@ -1,469 +1,469 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>Triblock HR & Payroll - Performance Management Software</title>
-        <meta name="language" content="english" />
-        <meta http-equiv="content-type" content="text/html" />
-        <meta name="author" content="Triblock HR & Payroll" />
-        <meta name="designer" content="Triblock HR & Payroll" />
-        <meta name="publisher" content="Triblock HR & Payroll" />
-        <meta
+<head>
+    <meta charset="utf-8"/>
+    <title>Triblock HR & Payroll - Performance Management Software</title>
+    <meta name="language" content="english"/>
+    <meta http-equiv="content-type" content="text/html"/>
+    <meta name="author" content="Triblock HR & Payroll"/>
+    <meta name="designer" content="Triblock HR & Payroll"/>
+    <meta name="publisher" content="Triblock HR & Payroll"/>
+    <meta
             name="description"
             content="Triblock HR & Payroll, the next generation HR and payroll solution. Payroll Management Software"
-        />
-        <meta
+    />
+    <meta
             name="keywords"
             content="HR, Human Resources, Payroll, HRIS, HRMS, Software Development, The Bahamas, Nassau, Company, Business Solutions, Efficiency, Bespoke, Solutions, Business, Software"
-        />
-        <meta name="distribution" content="web" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    />
+    <meta name="distribution" content="web"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-        <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="posts.css" />
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="posts.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
 
-        <style>
-            html {
-                scroll-behavior: smooth;
-            }
-        </style>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=G-0LLH2QQN04"
-        ></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
+    ></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-            function gtag() {
-                dataLayer.push(arguments);
-            }
+        function gtag() {
+            dataLayer.push(arguments);
+        }
 
-            gtag('js', new Date());
+        gtag('js', new Date());
 
-            gtag('config', 'G-0LLH2QQN04');
-        </script>
-    </head>
+        gtag('config', 'G-0LLH2QQN04');
+    </script>
+</head>
 
-    <body class="bg-gray-100 font-sans leading-normal tracking-normal">
-        <header class="fixed w-full z-10 top-0 bg-white">
-            <div
-                id="progress"
-                class="h-1 z-20 top-0"
-                style="
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+<header class="fixed w-full z-10 top-0 bg-white">
+    <div
+            id="progress"
+            class="h-1 z-20 top-0"
+            style="
                     background: linear-gradient(
                         to right,
                         #2e2e5c var(--scroll),
                         transparent 0
                     );
                 "
-            ></div>
-            <div class="relative bg-white">
-                <nav
-                    class="flex items-center justify-between flex-wrap bg-teal-500 p-6"
+    ></div>
+    <div class="relative bg-white">
+        <nav
+                class="flex items-center justify-between flex-wrap bg-teal-500 p-6"
+        >
+            <div
+                    class="flex items-center flex-shrink-0 text-white mr-6"
+            >
+                <a href="https://triblockhr.com">
+                    <span class="sr-only">Triblock HR</span>
+                    <img
+                            class="h-8 w-auto sm:h-10"
+                            src="https://triblockhr.com/triblock-logo.png"
+                            alt=""
+                    />
+                </a>
+            </div>
+            <div class="block lg:hidden">
+                <button
+                        id="menuBtn"
+                        class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-orange-700 hover:border-orange-700"
                 >
-                    <div
-                        class="flex items-center flex-shrink-0 text-white mr-6"
+                    <svg
+                            class="fill-current h-3 w-3"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
                     >
-                        <a href="https://triblockhr.com">
-                            <span class="sr-only">Triblock HR</span>
-                            <img
-                                class="h-8 w-auto sm:h-10"
-                                src="https://triblockhr.com/triblock-logo.png"
-                                alt=""
-                            />
-                        </a>
-                    </div>
-                    <div class="block lg:hidden">
-                        <button
-                            id="menuBtn"
-                            class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-orange-700 hover:border-orange-700"
+                        <title>Menu</title>
+                        <path
+                                d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"
+                        />
+                    </svg>
+                </button>
+            </div>
+            <div
+                    id="menu"
+                    class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden"
+            >
+                <div class="text-sm lg:flex-grow text-right">
+                    <a
+                            href="https://triblockhr.com/#features"
+                            class="mr-4 block mt-4 lg:inline-block lg:mt-0 text-base font-medium text-gray-500 hover:text-gray-900"
+                    >Features</a
+                    >
+                    <a
+                            href="https://triblockhr.com/#pricing"
+                            class="mr-4 block mt-4 lg:inline-block lg:mt-0 text-base font-medium text-gray-500 hover:text-gray-900"
+                    >Pricing</a
+                    >
+                    <a
+                            href="https://calendly.com/platoalpha/triblockhr"
+                            target="_blank"
+                            class="mr-4 block mt-4 lg:inline-block lg:mt-0 text-base font-medium text-gray-500 hover:text-gray-900"
+                    >Contact</a
+                    >
+                    <a
+                            href="https://triblockhr.com/posts.html"
+                            class="mr-4 block mt-4 lg:inline-block lg:mt-0 text-base font-medium text-gray-500 hover:text-gray-900"
+                    >Blog</a
+                    >
+                </div>
+            </div>
+        </nav>
+        <script>
+            const menuBtn = document.querySelector('#menuBtn');
+            const menu = document.querySelector('#menu');
+
+            menuBtn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        </script>
+    </div>
+</header>
+
+<!--Container-->
+<main>
+    <div class="relative mt-28">
+        <div
+                class="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100"
+        ></div>
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div
+                    class="relative shadow-xl sm:rounded-2xl sm:overflow-hidden"
+            >
+                <div class="absolute inset-0">
+                    <img
+                            class="h-full w-full object-cover"
+                            src="https://images.unsplash.com/photo-1622676666769-1a0407cf10a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                            alt="People working on laptops"
+                    />
+                    <div
+                            class="absolute inset-0 bg-gradient-to-b from-purple-900 to-indigo-600 mix-blend-multiply"
+                    ></div>
+                </div>
+                <div
+                        class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8"
+                >
+                    <h1
+                            class="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl"
+                    >
+                                <span class="block text-white"
+                                >Payroll Management</span
+                                >
+                        <span class="block text-indigo-100"
+                        >Software</span
                         >
-                            <svg
-                                class="fill-current h-3 w-3"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <title>Menu</title>
-                                <path
-                                    d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"
-                                />
-                            </svg>
-                        </button>
-                    </div>
-                    <div
-                        id="menu"
-                        class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden"
+                    </h1>
+                    <p
+                            class="mt-6 max-w-lg mx-auto text-center text-xl text-indigo-100 sm:max-w-3xl"
                     >
-                        <div class="text-sm lg:flex-grow text-right">
-                            <a
-                                href="https://triblockhr.com/#features"
-                                class="mr-4 block mt-4 lg:inline-block lg:mt-0 text-base font-medium text-gray-500 hover:text-gray-900"
-                                >Features</a
-                            >
-                            <a
-                                href="https://triblockhr.com/#pricing"
-                                class="mr-4 block mt-4 lg:inline-block lg:mt-0 text-base font-medium text-gray-500 hover:text-gray-900"
-                                >Pricing</a
-                            >
-                            <a
+                        Run payroll in 90 seconds. It's that simple.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="relative pt-16 pb-32 overflow-hidden">
+        <div
+                class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24"
+        >
+            <div
+                    class="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0"
+            >
+                <div class="mt-6">
+                    <h2
+                            class="text-3xl font-extrabold tracking-tight text-gray-900"
+                    >
+                        Seamless payroll management
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-500">
+                        TriblockHR syncs all your business’s HR data
+                        with payroll, so you never have to use a
+                        calculator or manually enter data, like hours
+                        and deductions. All you need to do is click
+                        “Create Pay Run .” It’s that easy.
+                    </p>
+                    <div class="mt-6">
+                        <a
                                 href="https://calendly.com/platoalpha/triblockhr"
                                 target="_blank"
-                                class="mr-4 block mt-4 lg:inline-block lg:mt-0 text-base font-medium text-gray-500 hover:text-gray-900"
-                                >Contact</a
-                            >
-                            <a
-                                href="https://triblockhr.com/posts.html"
-                                class="mr-4 block mt-4 lg:inline-block lg:mt-0 text-base font-medium text-gray-500 hover:text-gray-900"
-                                >Blog</a
-                            >
-                        </div>
-                    </div>
-                </nav>
-                <script>
-                    const menuBtn = document.querySelector('#menuBtn');
-                    const menu = document.querySelector('#menu');
-
-                    menuBtn.addEventListener('click', () => {
-                        menu.classList.toggle('hidden');
-                    });
-                </script>
-            </div>
-        </header>
-
-        <!--Container-->
-        <main>
-            <div class="relative mt-28">
-                <div
-                    class="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100"
-                ></div>
-                <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                    <div
-                        class="relative shadow-xl sm:rounded-2xl sm:overflow-hidden"
-                    >
-                        <div class="absolute inset-0">
-                            <img
-                                class="h-full w-full object-cover"
-                                src="https://images.unsplash.com/photo-1622676666769-1a0407cf10a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-                                alt="People working on laptops"
-                            />
-                            <div
-                                class="absolute inset-0 bg-gradient-to-b from-purple-900 to-indigo-600 mix-blend-multiply"
-                            ></div>
-                        </div>
-                        <div
-                            class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8"
+                                class="inline-flex bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-purple-700 hover:to-indigo-700"
                         >
-                            <h1
-                                class="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl"
-                            >
-                                <span class="block text-white"
-                                    >Payroll Management</span
-                                >
-                                <span class="block text-indigo-100"
-                                    >Software</span
-                                >
-                            </h1>
-                            <p
-                                class="mt-6 max-w-lg mx-auto text-center text-xl text-indigo-100 sm:max-w-3xl"
-                            >
-                                Run payroll in 90 seconds. It's that simple.
-                            </p>
-                        </div>
+                            Schedule Strategy Session
+                        </a>
                     </div>
                 </div>
+                <div class="mt-8 border-t border-gray-200 pt-6"></div>
             </div>
-
-            <div class="relative pt-16 pb-32 overflow-hidden">
+            <div class="mt-12 sm:mt-16 lg:mt-0">
                 <div
-                    class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24"
+                        class="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full lg:w-full"
                 >
-                    <div
-                        class="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0"
-                    >
-                        <div class="mt-6">
-                            <h2
+                    <img
+                            class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                            src="payroll-screenshot-1.png"
+                            alt="Employee index page"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-24">
+            <div
+                    class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24"
+            >
+                <div
+                        class="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2"
+                >
+                    <div class="mt-6">
+                        <h2
                                 class="text-3xl font-extrabold tracking-tight text-gray-900"
-                            >
-                                Seamless payroll management
-                            </h2>
-                            <p class="mt-4 text-lg text-gray-500">
-                                TriblockHR syncs all your business’s HR data
-                                with payroll, so you never have to use a
-                                calculator or manually enter data, like hours
-                                and deductions. All you need to do is click
-                                “Create Pay Run .” It’s that easy.
-                            </p>
-                            <div class="mt-6">
-                                <a
+                        >
+                            Automated payslip generation
+                        </h2>
+                        <p class="mt-4 text-lg text-gray-500">
+                            Payslips are automatically generated and
+                            disseminated via email to all employees once
+                            the payrun is approved and complete.
+                            Employees can also view their pay history
+                            within TriblockHR to view any past payslips
+                            for their reference.
+                        </p>
+                        <div class="mt-6">
+                            <a
                                     href="https://calendly.com/platoalpha/triblockhr"
                                     target="_blank"
+                                    target="_blank"
                                     class="inline-flex bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-purple-700 hover:to-indigo-700"
-                                >
-                                    Schedule Strategy Session
-                                </a>
-                            </div>
-                        </div>
-                        <div class="mt-8 border-t border-gray-200 pt-6"></div>
-                    </div>
-                    <div class="mt-12 sm:mt-16 lg:mt-0">
-                        <div
-                            class="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full lg:w-full"
-                        >
-                            <img
-                                class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                                src="payroll-screenshot-1.png"
-                                alt="Employee index page"
-                            />
+                            >
+                                Schedule Strategy Session
+                            </a>
                         </div>
                     </div>
-                </div>
-
-                <div class="mt-24">
                     <div
-                        class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24"
+                            class="mt-8 border-t border-gray-200 pt-6"
+                    ></div>
+                </div>
+                <div class="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
+                    <div
+                            class="pr-4 -ml-28 sm:pr-6 md:-ml-8 lg:px-0 lg:m-0 lg:relative lg:h-full"
                     >
-                        <div
-                            class="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2"
-                        >
-                            <div class="mt-6">
-                                <h2
-                                    class="text-3xl font-extrabold tracking-tight text-gray-900"
-                                >
-                                    Automated payslip generation
-                                </h2>
-                                <p class="mt-4 text-lg text-gray-500">
-                                    Payslips are automatically generated and
-                                    disseminated via email to all employees once
-                                    the payrun is approved and complete.
-                                    Employees can also view their pay history
-                                    within TriblockHR to view any past payslips
-                                    for their reference.
-                                </p>
-                                <div class="mt-6">
-                                    <a
-                                        href="https://calendly.com/platoalpha/triblockhr"
-                                        target="_blank"
-                                        target="_blank"
-                                        class="inline-flex bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-purple-700 hover:to-indigo-700"
-                                    >
-                                        Schedule Strategy Session
-                                    </a>
-                                </div>
-                            </div>
-                            <div
-                                class="mt-8 border-t border-gray-200 pt-6"
-                            ></div>
-                        </div>
-                        <div class="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
-                            <div
-                                class="pr-4 -ml-28 sm:pr-6 md:-ml-8 lg:px-0 lg:m-0 lg:relative lg:h-full"
-                            >
-                                <img
-                                    class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
-                                    src="payroll-screenshot-2.png"
-                                    alt="Employee profile 360 view"
-                                />
-                            </div>
-                        </div>
+                        <img
+                                class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
+                                src="payroll-screenshot-2.png"
+                                alt="Employee profile 360 view"
+                        />
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <div class="max-w-3xl mx-auto divide-y-2 divide-gray-200 mb-14">
-                <h2
-                    class="text-center text-3xl font-extrabold text-gray-900 sm:text-4xl mb-4"
-                >
-                    Executing Employee Payroll
-                </h2>
-                <div
-                    class="relative h-0 overflow-hidden max-w-full w-full"
-                    style="padding-bottom: 56.25%"
-                >
-                    <iframe
-                        src="https://www.youtube.com/embed/RNCaRVbZD2g"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
-                        class="absolute top-0 left-0 w-full h-full"
-                    ></iframe>
-                </div>
-            </div>
+    <div class="max-w-3xl mx-auto divide-y-2 divide-gray-200 mb-14">
+        <h2
+                class="text-center text-3xl font-extrabold text-gray-900 sm:text-4xl mb-4"
+        >
+            How To Manage Employee Deductions?
+        </h2>
+        <div
+                class="relative h-0 overflow-hidden max-w-full w-full"
+                style="padding-bottom: 56.25%"
+        >
+            <iframe
+                    src="https://www.youtube.com/embed/Td2FPOx0zg0"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    class="absolute top-0 left-0 w-full h-full"
+            ></iframe>
+        </div>
+    </div>
 
-            <div class="max-w-3xl mx-auto divide-y-2 divide-gray-200">
-                <h2
-                    class="text-center text-3xl font-extrabold text-gray-900 sm:text-4xl"
-                >
-                    Frequently asked questions
-                </h2>
-                <dl
-                    class="mt-6 space-y-6 divide-y divide-gray-200 ml-2 md:ml-0"
-                >
-                    <div class="pt-6">
-                        <dt class="text-lg">
-                            <!-- Expand/collapse question button -->
-                            <button
-                                type="button"
-                                class="text-left w-full flex justify-between items-start text-gray-400"
-                                aria-controls="faq-0"
-                                aria-expanded="false"
-                            >
+    <div class="max-w-3xl mx-auto divide-y-2 divide-gray-200">
+        <h2
+                class="text-center text-3xl font-extrabold text-gray-900 sm:text-4xl"
+        >
+            Frequently asked questions
+        </h2>
+        <dl
+                class="mt-6 space-y-6 divide-y divide-gray-200 ml-2 md:ml-0"
+        >
+            <div class="pt-6">
+                <dt class="text-lg">
+                    <!-- Expand/collapse question button -->
+                    <button
+                            type="button"
+                            class="text-left w-full flex justify-between items-start text-gray-400"
+                            aria-controls="faq-0"
+                            aria-expanded="false"
+                    >
                                 <span class="font-medium text-gray-900">
                                     How does TriblockHR help with payroll?
                                 </span>
-                            </button>
-                        </dt>
-                        <dd class="mt-2 pr-12" id="faq-0">
-                            <p class="text-base text-gray-500">
-                                TriblockHR calculates all your taxes and submits
-                                your tax forms and payments automatically. The
-                                platform monitors laws at national levels to
-                                ensure total compliance for your organization.
-                            </p>
-                        </dd>
-                    </div>
+                    </button>
+                </dt>
+                <dd class="mt-2 pr-12" id="faq-0">
+                    <p class="text-base text-gray-500">
+                        TriblockHR calculates all your taxes and submits
+                        your tax forms and payments automatically. The
+                        platform monitors laws at national levels to
+                        ensure total compliance for your organization.
+                    </p>
+                </dd>
+            </div>
 
-                    <div class="pt-6">
-                        <dt class="text-lg">
-                            <!-- Expand/collapse question button -->
-                            <button
-                                type="button"
-                                class="text-left w-full flex justify-between items-start text-gray-400"
-                                aria-controls="faq-0"
-                                aria-expanded="false"
-                            >
+            <div class="pt-6">
+                <dt class="text-lg">
+                    <!-- Expand/collapse question button -->
+                    <button
+                            type="button"
+                            class="text-left w-full flex justify-between items-start text-gray-400"
+                            aria-controls="faq-0"
+                            aria-expanded="false"
+                    >
                                 <span class="font-medium text-gray-900">
                                     How does TriblockHR integrate payroll with
                                     time and attendance?
                                 </span>
-                            </button>
-                        </dt>
-                        <dd class="mt-2 pr-12" id="faq-0">
-                            <p class="text-base text-gray-500">
-                                Yes—you can integrate TriblockHR with your
-                                3rd-party Time & Attendance system, enabling
-                                TriblockHR to automatically import employees'
-                                hours and calculate upcoming pay runs. If you
-                                don't want to deal with two separate systems for
-                                T&A and payroll, you can use TriblockHR's native
-                                Time & Attendance product, which embeds your
-                                hours-approval workflow directly within Payroll.
-                            </p>
-                            <a
-                                class="text-blue-800 hover:text-indigo-800"
-                                href="https://www.triblockhr.com/time-management-software.html"
-                                >Learn more about TriblockHR Time &
-                                Attendance.</a
-                            >
-                        </dd>
-                    </div>
+                    </button>
+                </dt>
+                <dd class="mt-2 pr-12" id="faq-0">
+                    <p class="text-base text-gray-500">
+                        Yes—you can integrate TriblockHR with your
+                        3rd-party Time & Attendance system, enabling
+                        TriblockHR to automatically import employees'
+                        hours and calculate upcoming pay runs. If you
+                        don't want to deal with two separate systems for
+                        T&A and payroll, you can use TriblockHR's native
+                        Time & Attendance product, which embeds your
+                        hours-approval workflow directly within Payroll.
+                    </p>
+                    <a
+                            class="text-blue-800 hover:text-indigo-800"
+                            href="https://www.triblockhr.com/time-management-software.html"
+                    >Learn more about TriblockHR Time &
+                        Attendance.</a
+                    >
+                </dd>
+            </div>
 
-                    <div class="pt-6">
-                        <dt class="text-lg">
-                            <!-- Expand/collapse question button -->
-                            <button
-                                type="button"
-                                class="text-left w-full flex justify-between items-start text-gray-400"
-                                aria-controls="faq-0"
-                                aria-expanded="false"
-                            >
+            <div class="pt-6">
+                <dt class="text-lg">
+                    <!-- Expand/collapse question button -->
+                    <button
+                            type="button"
+                            class="text-left w-full flex justify-between items-start text-gray-400"
+                            aria-controls="faq-0"
+                            aria-expanded="false"
+                    >
                                 <span class="font-medium text-gray-900">
                                     Are there additional fees associated with
                                     running off-cycle pay runs in TriblockHR?
                                 </span>
-                            </button>
-                        </dt>
-                        <dd class="mt-2 pr-12" id="faq-0">
-                            <p class="text-base text-gray-500">
-                                There are no additional costs or fees associated
-                                with running an off-cycle pay run in TriblockHR.
-                                If you want to pay your employee outside of a
-                                regular pay run, you can create an off-cycle pay
-                                run at any time.
-                            </p>
-                        </dd>
-                    </div>
+                    </button>
+                </dt>
+                <dd class="mt-2 pr-12" id="faq-0">
+                    <p class="text-base text-gray-500">
+                        There are no additional costs or fees associated
+                        with running an off-cycle pay run in TriblockHR.
+                        If you want to pay your employee outside of a
+                        regular pay run, you can create an off-cycle pay
+                        run at any time.
+                    </p>
+                </dd>
+            </div>
 
-                    <!-- More questions... -->
-                </dl>
+            <!-- More questions... -->
+        </dl>
 
-                <div class="container px-4 mt-12">
+        <div class="container px-4 mt-12">
+            <div
+                    class="font-sans bg-origin-border px-4 py-2 border border-transparent text-base font-medium text-white rounded-lg p-4 text-center"
+            >
+                <div class="w-full text-center pt-2">
                     <div
-                        class="font-sans bg-origin-border px-4 py-2 border border-transparent text-base font-medium text-white rounded-lg p-4 text-center"
+                            class="max-w-xl mx-auto p-1 pr-0 flex flex-wrap items-center"
                     >
-                        <div class="w-full text-center pt-2">
-                            <div
-                                class="max-w-xl mx-auto p-1 pr-0 flex flex-wrap items-center"
-                            >
-                                <a
-                                    href="https://calendly.com/platoalpha/triblockhr"
+                        <a
+                                href="https://calendly.com/platoalpha/triblockhr"
+                                target="_blank"
+                                class="flex-1 mt-4 block md:inline-block appearance-none bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border text-white text-base font-semibold tracking-wider uppercase py-4 rounded shadow hover:from-purple-700 hover:to-indigo-700"
+                        >Schedule Strategy Session</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!--/container-->
+
+<footer class="bg-white mt-6">
+    <div class="container max-w-4xl mx-auto flex py-8">
+        <div class="w-full mx-auto flex flex-wrap">
+            <div class="flex w-full md:w-1/2">
+                <div class="px-8">
+                    <h3 class="font-bold text-gray-900">About</h3>
+                    <p class="py-4 text-gray-600 text-sm">
+                        Triblock HR is meant to make your business
+                        operations more efficient and cost effective by
+                        drastically reducing the time your HR and
+                        Payroll departments spend doing repetitive and
+                        monotonous work while empowering employees
+                        through self service features.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex w-full md:w-1/2">
+                <div class="px-8">
+                    <h3 class="font-bold text-gray-900">Social</h3>
+                    <ul class="list-reset items-center text-sm pt-3">
+                        <li>
+                            <a
+                                    class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
+                                    href="https://www.linkedin.com/company/triblockhr"
                                     target="_blank"
-                                    class="flex-1 mt-4 block md:inline-block appearance-none bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border text-white text-base font-semibold tracking-wider uppercase py-4 rounded shadow hover:from-purple-700 hover:to-indigo-700"
-                                    >Schedule Strategy Session</a
-                                >
-                            </div>
-                        </div>
-                    </div>
+                            >Linkedin</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                    class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
+                                    href="https://www.facebook.com/triblockhr"
+                                    target="_blank"
+                            >Facebook</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                    class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
+                                    href="https://www.instagram.com/triblockhr"
+                                    target="_blank"
+                            >Instagram</a
+                            >
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </main>
-        <!--/container-->
+        </div>
+    </div>
+</footer>
 
-        <footer class="bg-white mt-6">
-            <div class="container max-w-4xl mx-auto flex py-8">
-                <div class="w-full mx-auto flex flex-wrap">
-                    <div class="flex w-full md:w-1/2">
-                        <div class="px-8">
-                            <h3 class="font-bold text-gray-900">About</h3>
-                            <p class="py-4 text-gray-600 text-sm">
-                                Triblock HR is meant to make your business
-                                operations more efficient and cost effective by
-                                drastically reducing the time your HR and
-                                Payroll departments spend doing repetitive and
-                                monotonous work while empowering employees
-                                through self service features.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="flex w-full md:w-1/2">
-                        <div class="px-8">
-                            <h3 class="font-bold text-gray-900">Social</h3>
-                            <ul class="list-reset items-center text-sm pt-3">
-                                <li>
-                                    <a
-                                        class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
-                                        href="https://www.linkedin.com/company/triblockhr"
-                                        target="_blank"
-                                        >Linkedin</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
-                                        href="https://www.facebook.com/triblockhr"
-                                        target="_blank"
-                                        >Facebook</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
-                                        href="https://www.instagram.com/triblockhr"
-                                        target="_blank"
-                                        >Instagram</a
-                                    >
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-        <script src="progress-bar.js"></script>
-    </body>
+<script src="progress-bar.js"></script>
+</body>
 </html>
