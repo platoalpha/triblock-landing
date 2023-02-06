@@ -1,588 +1,604 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>Triblock HR & Payroll - Blog</title>
-        <meta name="language" content="english" />
-        <meta http-equiv="content-type" content="text/html" />
-        <meta name="author" content="Triblock HR & Payroll" />
-        <meta name="designer" content="Triblock HR & Payroll" />
-        <meta name="publisher" content="Triblock HR & Payroll" />
-        <meta
+<head>
+    <meta charset="utf-8"/>
+    <title>Triblock HR & Payroll - Blog</title>
+    <meta name="language" content="english"/>
+    <meta http-equiv="content-type" content="text/html"/>
+    <meta name="author" content="Triblock HR & Payroll"/>
+    <meta name="designer" content="Triblock HR & Payroll"/>
+    <meta name="publisher" content="Triblock HR & Payroll"/>
+    <meta
             name="description"
             content="Triblock HR & Payroll, the next generation HR and payroll solution."
-        />
-        <meta
+    />
+    <meta
             name="keywords"
             content="HR, Human Resources, Payroll, HRIS, HRMS, Software Development, The Bahamas, Nassau, Company, Business Solutions, Efficiency, Bespoke, Solutions, Business, Software"
-        />
-        <meta name="distribution" content="web" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    />
+    <meta name="distribution" content="web"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-        <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="posts.css" />
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="posts.css"/>
 
-        <style>
-            html {
-                scroll-behavior: smooth;
-            }
-        </style>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=G-0LLH2QQN04"
-        ></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
+    ></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-            function gtag() {
-                dataLayer.push(arguments);
-            }
+        function gtag() {
+            dataLayer.push(arguments);
+        }
 
-            gtag('js', new Date());
+        gtag('js', new Date());
 
-            gtag('config', 'G-0LLH2QQN04');
-        </script>
-    </head>
+        gtag('config', 'G-0LLH2QQN04');
+    </script>
+</head>
 
-    <body class="bg-gray-100 font-sans leading-normal tracking-normal">
-        <header class="fixed w-full z-10 top-0 bg-white">
-            <div
-                id="progress"
-                class="h-1 z-20 top-0"
-                style="
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+<header class="fixed w-full z-10 top-0 bg-white">
+    <div
+            id="progress"
+            class="h-1 z-20 top-0"
+            style="
                     background: linear-gradient(
                         to right,
                         #2e2e5c var(--scroll),
                         transparent 0
                     );
                 "
-            ></div>
-            <div class="relative bg-white">
-                <nav
-                    class="flex items-center justify-between flex-wrap bg-teal-500 p-6"
+    ></div>
+    <div class="relative bg-white">
+        <nav
+                class="flex items-center justify-between flex-wrap bg-teal-500 p-6"
+        >
+            <div
+                    class="flex items-center flex-shrink-0 text-white mr-6"
+            >
+                <a href="https://triblockhr.com">
+                    <span class="sr-only">Triblock HR</span>
+                    <img
+                            class="h-8 w-auto sm:h-10"
+                            src="https://triblockhr.com/triblock-logo.png"
+                            alt=""
+                    />
+                </a>
+            </div>
+            <div class="block lg:hidden">
+                <button
+                        id="menuBtn"
+                        class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-orange-700 hover:border-orange-700"
                 >
-                    <div
-                        class="flex items-center flex-shrink-0 text-white mr-6"
+                    <svg
+                            class="fill-current h-3 w-3"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
                     >
-                        <a href="https://triblockhr.com">
-                            <span class="sr-only">Triblock HR</span>
-                            <img
-                                class="h-8 w-auto sm:h-10"
-                                src="https://triblockhr.com/triblock-logo.png"
-                                alt=""
-                            />
-                        </a>
-                    </div>
-                    <div class="block lg:hidden">
-                        <button
-                            id="menuBtn"
-                            class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-orange-700 hover:border-orange-700"
-                        >
-                            <svg
-                                class="fill-current h-3 w-3"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <title>Menu</title>
-                                <path
-                                    d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"
-                                />
-                            </svg>
-                        </button>
-                    </div>
-                    <div
-                        id="menu"
-                        class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden"
+                        <title>Menu</title>
+                        <path
+                                d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"
+                        />
+                    </svg>
+                </button>
+            </div>
+            <div
+                    id="menu"
+                    class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden"
+            >
+                <div class="text-sm lg:flex-grow text-right">
+                    <a
+                            href="https://triblockhr.com/#features"
+                            class="mr-4 block mt-4 lg:inline-block lg:mt-0 text-base font-medium text-gray-500 hover:text-gray-900"
+                    >Features</a
                     >
-                        <div class="text-sm lg:flex-grow text-right">
-                            <a
-                                href="https://triblockhr.com/#features"
-                                class="mr-4 block mt-4 lg:inline-block lg:mt-0 text-base font-medium text-gray-500 hover:text-gray-900"
-                                >Features</a
-                            >
-                            <a
-                                href="https://triblockhr.com/#pricing"
-                                class="mr-4 block mt-4 lg:inline-block lg:mt-0 text-base font-medium text-gray-500 hover:text-gray-900"
-                                >Pricing</a
-                            >
-                            <a
-                                href="https://calendly.com/platoalpha/triblockhr"
-                                target="_blank"
-                                class="mr-4 block mt-4 lg:inline-block lg:mt-0 text-base font-medium text-gray-500 hover:text-gray-900"
-                                >Contact</a
-                            >
-                            <a
-                                href="https://triblockhr.com/posts.html"
-                                class="mr-4 block mt-4 lg:inline-block lg:mt-0 text-base font-medium text-gray-500 hover:text-gray-900"
-                                >Blog</a
-                            >
-                        </div>
-                    </div>
-                </nav>
-                <script>
-                    const menuBtn = document.querySelector('#menuBtn');
-                    const menu = document.querySelector('#menu');
-
-                    menuBtn.addEventListener('click', () => {
-                        menu.classList.toggle('hidden');
-                    });
-                </script>
-            </div>
-        </header>
-
-        <!--Container-->
-        <div class="container w-full md:max-w-4xl mx-auto pt-32">
-            <div class="content">
-                <div class="summary">
-                    <div class="summary-date">3rd February, 2023</div>
-
-                    <h2 class="summary-title">
-                        <a
-                            href="https://triblockhr.com/posts/learning-management-software.html"
-                            >Learning Management Software</a
-                        >
-                    </h2>
-                    <p class="summary-description">
-                        The administration, documenting, tracking, reporting,
-                        automation, and delivery of educational courses,
-                        training programs, or learning and development programs
-                        are all handled by a learning management system (LMS),
-                        which is a piece of software. Doesn't this sound like it
-                        belongs in the field of education?
-                    </p>
+                    <a
+                            href="https://triblockhr.com/#pricing"
+                            class="mr-4 block mt-4 lg:inline-block lg:mt-0 text-base font-medium text-gray-500 hover:text-gray-900"
+                    >Pricing</a
+                    >
+                    <a
+                            href="https://calendly.com/platoalpha/triblockhr"
+                            target="_blank"
+                            class="mr-4 block mt-4 lg:inline-block lg:mt-0 text-base font-medium text-gray-500 hover:text-gray-900"
+                    >Contact</a
+                    >
+                    <a
+                            href="https://triblockhr.com/posts.html"
+                            class="mr-4 block mt-4 lg:inline-block lg:mt-0 text-base font-medium text-gray-500 hover:text-gray-900"
+                    >Blog</a
+                    >
                 </div>
             </div>
-            <div class="content">
-                <div class="summary">
-                    <div class="summary-date">30th January, 2023</div>
+        </nav>
+        <script>
+            const menuBtn = document.querySelector('#menuBtn');
+            const menu = document.querySelector('#menu');
 
-                    <h2 class="summary-title">
-                        <a
-                            href="https://triblockhr.com/posts/how-artificial-intelligence-can-improve-hris-systems.html"
-                            >How Artificial Intelligence Can Improve HRIS
-                            Systems?</a
-                        >
-                    </h2>
-                    <p class="summary-description">
-                        Artificial Intelligence (AI) has the potential to
-                        revolutionize the way Human Resource Information Systems
-                        (HRIS) operate. By incorporating AI technologies, HRIS
-                        can provide more efficient, accurate, and effective
-                        support to HR departments, thereby reducing
-                        administrative workloads and freeing up time for more
-                        strategic tasks.
-                    </p>
-                </div>
-            </div>
-            <div class="content">
-                <div class="summary">
-                    <div class="summary-date">16th January, 2023</div>
+            menuBtn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        </script>
+    </div>
+</header>
 
-                    <h2 class="summary-title">
-                        <a
-                            href="https://triblockhr.com/posts/why-payroll-automation-is-necessary-in-2023.html"
-                            >Why Payroll Automation Is Necessary In 2023?</a
-                        >
-                    </h2>
-                    <p class="summary-description">
-                        Payroll automation has become a necessity in the modern
-                        business landscape. With the rapid advancement of
-                        technology, automation has become an efficient and
-                        cost-effective way to manage and process payroll. In
-                        2023, businesses will need to automate their payroll
-                        processes to keep up with the changing demands of the
-                        workforce, stay compliant with regulations, and improve
-                        their bottom line.
-                    </p>
-                </div>
-            </div>
-            <div class="content">
-                <div class="summary">
-                    <div class="summary-date">24th October, 2022</div>
+<!--Container-->
+<div class="container w-full md:max-w-4xl mx-auto pt-32">
+    <div class="content">
+        <div class="summary">
+            <div class="summary-date">6th February, 2023</div>
 
-                    <h2 class="summary-title">
-                        <a
-                            href="https://triblockhr.com/posts/how-lean-hr-teams-should-evalulate-HR-and-payroll-software.html"
-                            >How lean HR teams should evaluate HR and payroll
-                            software</a
-                        >
-                    </h2>
-                    <p class="summary-description">
-                        The use of HR software tools was on the rise even before
-                        the pandemic started. Now, over two years in, workplaces
-                        have fundamentally changed. Remote and hybrid work is
-                        here to stay. Company demographics continue to skew
-                        younger. And companies are waging an international
-                        search for talent. How does one sift through a crowded
-                        marketplace with limited time and resources? These are
-                        the steps to follow to find the systems that best fit
-                        your needs:
-                    </p>
-                </div>
-            </div>
-            <div class="content">
-                <div class="summary">
-                    <div class="summary-date">9th September, 2022</div>
-
-                    <h2 class="summary-title">
-                        <a
-                            href="https://triblockhr.com/posts/bahamian-payroll-2022.html"
-                            >Bahamian Payroll in 2022</a
-                        >
-                    </h2>
-                    <p class="summary-description">
-                        Technology is improving how businesses have been working
-                        over the years. They should pay the workforce on time
-                        and according to their working time for any business.
-                        When the company has a workforce located on different
-                        islands having different brands, unions and payment
-                        rules, manual calculations can’t take the workload of HR
-                        and administration teams much more time to complete.
-                        Thanks to technology, payroll software is here to help
-                        small and big businesses manage their payroll.
-                    </p>
-                </div>
-            </div>
-            <div class="content">
-                <div class="summary">
-                    <div class="summary-date">19th July, 2022</div>
-
-                    <h2 class="summary-title">
-                        <a
-                            href="https://triblockhr.com/posts/q2-release-recap.html"
-                            >What’s New with Triblock HR & Payroll: Q2 Release
-                            Recap</a
-                        >
-                    </h2>
-                    <p class="summary-description">
-                        Our aim at TriblockHR is to assemble nearly all the HR &
-                        Payroll related functions into a single easy to use
-                        system while automating many of those functions, making
-                        companies and the people that work in them much more
-                        efficient and effective. We are devoted to constantly
-                        enhancing our product to enable you to deliver more
-                        consistent customer support. Each quarter we concentrate
-                        on addressing a few areas to strengthen our product.
-                    </p>
-                </div>
-            </div>
-            <div class="content">
-                <div class="summary">
-                    <div class="summary-date">13th June, 2022</div>
-
-                    <h2 class="summary-title">
-                        <a
-                            href="https://triblockhr.com/posts/7-advantages-of-using-recruitment-management-software.html"
-                            >Seven Advantages of Using Recruitment Management
-                            Software</a
-                        >
-                    </h2>
-                    <p class="summary-description">
-                        HR being the frontline of any enterprise, have a huge
-                        set of responsibilities and difficulties at management
-                        compared to other departments. Recruitment management is
-                        one of them. This article will explain to you the
-                        importance and benefits of a recruitment management
-                        software for any business vertical and organization.
-                    </p>
-                </div>
-            </div>
-            <div class="content">
-                <div class="summary">
-                    <div class="summary-date">30th May, 2022</div>
-
-                    <h2 class="summary-title">
-                        <a
-                            href="https://triblockhr.com/posts/employee-document-management-module.html"
-                            >Do You Struggle With Managing Employee
-                            Documents?</a
-                        >
-                    </h2>
-                    <p class="summary-description">
-                        A document management system provides security,
-                        convenience, and increased productivity to your
-                        organization. With TriblockHR, the power to easily
-                        manage and disperse documents throughout your company is
-                        a huge leap forward in abstracting mundane and
-                        repetitive tasks away from managers.
-                    </p>
-                </div>
-            </div>
-            <div class="content">
-                <div class="summary">
-                    <div class="summary-date">23rd May, 2022</div>
-
-                    <h2 class="summary-title">
-                        <a
-                            href="https://triblockhr.com/posts/three-reasons-to-say-goodbye-to-your-paper-based-hr-processes.html"
-                            >Three Reasons To Say Good Riddance To Your
-                            Paper-based HR Processes</a
-                        >
-                    </h2>
-                    <p class="summary-description">
-                        Whether you’re a dedicated HR professional or a small
-                        business owner who looks after the people processes,
-                        nobody wants to be trapped in one location.
-                    </p>
-                </div>
-            </div>
-
-            <div class="content">
-                <div class="summary">
-                    <div class="summary-date">16th May, 2022</div>
-
-                    <h2 class="summary-title">
-                        <a
-                            href="https://triblockhr.com/posts/five-tips-to-keep-your-business-data-safe.html"
-                            >Payroll Security: Five Tips To Keep Your Business
-                            Data Safe</a
-                        >
-                    </h2>
-                    <p class="summary-description">
-                        Payroll security involves taking steps to ensure that
-                        sensitive company and employee information isn’t
-                        compromised by employees or outside actors, like
-                        hackers. Common sources of payroll security issues
-                        include time sheet fraud, pay rate alterations, and data
-                        breaches—though the exact nature of these varies by the
-                        type of business.
-                    </p>
-                </div>
-            </div>
-
-            <div class="content">
-                <div class="summary">
-                    <div class="summary-date">9th May, 2022</div>
-
-                    <h2 class="summary-title">
-                        <a
-                            href="https://triblockhr.com/posts/why-you-should-upgrade-your-payroll-software.html"
-                            >Why You Should Upgrade Your Payroll Software?</a
-                        >
-                    </h2>
-                    <p class="summary-description">
-                        Business in the digital age moves at a frantic pace, and
-                        it’s down to payroll managers to stay on the pulse of
-                        technology to maximise productivity and performance
-                        within their department. These days, finding and
-                        integrating the ideal payroll software is a core
-                        challenge facing companies across every industry.
-                    </p>
-                </div>
-            </div>
-
-            <div class="content">
-                <div class="summary">
-                    <div class="summary-date">2nd May, 2022</div>
-
-                    <h2 class="summary-title">
-                        <a
-                            href="https://triblockhr.com/posts/five-benefits-of-an-effective-time-management-strategy.html"
-                            >Five Benefits of an Effective Employee Time
-                            Management Strategy</a
-                        >
-                    </h2>
-                    <p class="summary-description">
-                        It’s true that time is an infinite resource. But in the
-                        world of business, it isn’t. While we all have 24 hours
-                        in a day (which reset on the next day), every single
-                        minute makes a difference between a successful and a
-                        failed business.
-                    </p>
-                </div>
-            </div>
-
-            <div class="content">
-                <div class="summary">
-                    <div class="summary-date">29th April, 2022</div>
-
-                    <h2 class="summary-title">
-                        <a
-                            href="https://triblockhr.com/posts/three-reasons-why-performance-management-is-important.html"
-                            >Three Reasons Why Performance Management Is
-                            Important</a
-                        >
-                    </h2>
-                    <p class="summary-description">
-                        Performance management is key to getting the most out of
-                        your employees. After all, a common statement in line
-                        with business success is that your people are your most
-                        important asset.
-                    </p>
-                </div>
-            </div>
-
-            <div class="content">
-                <div class="summary">
-                    <div class="summary-date">25th April, 2022</div>
-
-                    <h2 class="summary-title">
-                        <a
-                            href="https://triblockhr.com/posts/employee-performance-management-module.html"
-                            >Do You Have Trouble Scheduling Performance Reviews
-                            With Your Employees?</a
-                        >
-                    </h2>
-                    <p class="summary-description">
-                        An organization that seeks to gauge how an employee
-                        progresses in their role invests in its greatest asset,
-                        people. Scheduling performance reviews at any time allow
-                        managers to quickly determine what requirements are
-                        necessary for an employee to succeed.
-                    </p>
-                </div>
-            </div>
-
-            <div class="content">
-                <div class="summary">
-                    <div class="summary-date">11th April, 2022</div>
-
-                    <h2 class="summary-title">
-                        <a
-                            href="https://triblockhr.com/posts/the-5-step-guide-to-time-off-requests.html"
-                            >The 5-Step Guide to Time-off Requests</a
-                        >
-                    </h2>
-                    <p class="summary-description">
-                        No matter how large your team is or which industry
-                        you're in, these steps will help you effectively manage
-                        time-off requests.
-                    </p>
-                </div>
-            </div>
-
-            <div class="content">
-                <div class="summary">
-                    <div class="summary-date">4th April, 2022</div>
-
-                    <h2 class="summary-title">
-                        <a
-                            href="https://triblockhr.com/posts/how-to-maintain-employee-records.html"
-                            >How to Maintain Employee Records?</a
-                        >
-                    </h2>
-                    <p class="summary-description">
-                        Maintaining employee records is more than a filing
-                        cabinet with color-coordinated folders. There is so much
-                        information to track and manage for each employee, and
-                        doing so only gets more complicated the more people you
-                        hire.
-                    </p>
-                </div>
-            </div>
-
-            <div class="content">
-                <div class="summary">
-                    <div class="summary-date">28th March, 2022</div>
-
-                    <h2 class="summary-title">
-                        <a
-                            href="https://triblockhr.com/posts/when-should-i-get-an-hris-for-my-company.html"
-                            >When should I get an HRIS for my company?</a
-                        >
-                    </h2>
-                    <p class="summary-description">
-                        HRIS stands for human resource information system or
-                        otherwise known as human resource management system
-                        (HRMS), which is basically the intertwining of human
-                        resources and information technology through human
-                        resource (HR) software.
-                    </p>
-                </div>
-            </div>
-
-            <!--Divider-->
-            <hr class="border-b-2 border-gray-400 mb-8 mx-4" />
-
-            <!--Subscribe-->
-            <div class="container px-4">
-                <div
-                    class="font-sans bg-gradient-to-t from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 border border-transparent text-base font-medium shadow-sm text-white rounded-lg shadow-xl p-4 text-center"
+            <h2 class="summary-title">
+                <a
+                        href="https://triblockhr.com/posts/triblockhr-and-the-gig-economy.html"
+                >TriblockHR and the Gig Economy</a
                 >
-                    <h2
-                        class="font-extrabold text-white break-normal text-xl md:text-4xl"
-                    >
-                        Subscribe to our Newsletter
-                    </h2>
-                    <h3
-                        class="font-bold break-normal text-white text-sm md:text-base"
-                    >
-                        Get the latest HR & Payroll insights directly to your
-                        inbox.
-                    </h3>
-                    <div class="w-full text-center pt-2">
-                        <div
-                            class="max-w-xl mx-auto p-1 pr-0 flex flex-wrap items-center"
-                        >
-                            <a
-                                href="https://cdn.forms-content.sg-form.com/98295d78-3029-11ed-8a47-4ef04d44ae8d"
-                                target="_blank"
-                                rel="noreferrer"
-                                class="flex-1 mt-4 block md:inline-block appearance-none bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border text-white text-base font-semibold tracking-wider uppercase py-4 rounded shadow hover:from-purple-700 hover:to-indigo-700"
-                                >Subscribe now!</a
-                            >
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- /Subscribe-->
+            </h2>
+            <p class="summary-description">
+                The gig economy has altered the way we work, with an increasing number of people opting for freelance
+                or short-term project-based work over traditional full-time employment.
+            </p>
         </div>
-        <!--/container-->
+    </div>
+    <div class="content">
+        <div class="summary">
+            <div class="summary-date">3rd February, 2023</div>
 
-        <footer class="bg-white mt-6">
-            <div class="container max-w-4xl mx-auto flex py-8">
-                <div class="w-full mx-auto flex flex-wrap">
-                    <div class="flex w-full md:w-1/2">
-                        <div class="px-8">
-                            <h3 class="font-bold text-gray-900">About</h3>
-                            <p class="py-4 text-gray-600 text-sm">
-                                Triblock HR is meant to make your business
-                                operations more efficient and cost effective by
-                                drastically reducing the time your HR and
-                                Payroll departments spend doing repetitive and
-                                monotonous work while empowering employees
-                                through self service features.
-                            </p>
-                        </div>
-                    </div>
+            <h2 class="summary-title">
+                <a
+                        href="https://triblockhr.com/posts/learning-management-software.html"
+                >Learning Management Software</a
+                >
+            </h2>
+            <p class="summary-description">
+                The administration, documenting, tracking, reporting,
+                automation, and delivery of educational courses,
+                training programs, or learning and development programs
+                are all handled by a learning management system (LMS),
+                which is a piece of software. Doesn't this sound like it
+                belongs in the field of education?
+            </p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="summary">
+            <div class="summary-date">30th January, 2023</div>
 
-                    <div class="flex w-full md:w-1/2">
-                        <div class="px-8">
-                            <h3 class="font-bold text-gray-900">Social</h3>
-                            <ul class="list-reset items-center text-sm pt-3">
-                                <li>
-                                    <a
-                                        class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
-                                        href="https://www.linkedin.com/company/triblockhr"
-                                        target="_blank"
-                                        >Linkedin</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
-                                        href="https://www.facebook.com/triblockhr"
-                                        target="_blank"
-                                        >Facebook</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
-                                        href="https://www.instagram.com/triblockhr"
-                                        target="_blank"
-                                        >Instagram</a
-                                    >
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+            <h2 class="summary-title">
+                <a
+                        href="https://triblockhr.com/posts/how-artificial-intelligence-can-improve-hris-systems.html"
+                >How Artificial Intelligence Can Improve HRIS
+                    Systems?</a
+                >
+            </h2>
+            <p class="summary-description">
+                Artificial Intelligence (AI) has the potential to
+                revolutionize the way Human Resource Information Systems
+                (HRIS) operate. By incorporating AI technologies, HRIS
+                can provide more efficient, accurate, and effective
+                support to HR departments, thereby reducing
+                administrative workloads and freeing up time for more
+                strategic tasks.
+            </p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="summary">
+            <div class="summary-date">16th January, 2023</div>
+
+            <h2 class="summary-title">
+                <a
+                        href="https://triblockhr.com/posts/why-payroll-automation-is-necessary-in-2023.html"
+                >Why Payroll Automation Is Necessary In 2023?</a
+                >
+            </h2>
+            <p class="summary-description">
+                Payroll automation has become a necessity in the modern
+                business landscape. With the rapid advancement of
+                technology, automation has become an efficient and
+                cost-effective way to manage and process payroll. In
+                2023, businesses will need to automate their payroll
+                processes to keep up with the changing demands of the
+                workforce, stay compliant with regulations, and improve
+                their bottom line.
+            </p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="summary">
+            <div class="summary-date">24th October, 2022</div>
+
+            <h2 class="summary-title">
+                <a
+                        href="https://triblockhr.com/posts/how-lean-hr-teams-should-evalulate-HR-and-payroll-software.html"
+                >How lean HR teams should evaluate HR and payroll
+                    software</a
+                >
+            </h2>
+            <p class="summary-description">
+                The use of HR software tools was on the rise even before
+                the pandemic started. Now, over two years in, workplaces
+                have fundamentally changed. Remote and hybrid work is
+                here to stay. Company demographics continue to skew
+                younger. And companies are waging an international
+                search for talent. How does one sift through a crowded
+                marketplace with limited time and resources? These are
+                the steps to follow to find the systems that best fit
+                your needs:
+            </p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="summary">
+            <div class="summary-date">9th September, 2022</div>
+
+            <h2 class="summary-title">
+                <a
+                        href="https://triblockhr.com/posts/bahamian-payroll-2022.html"
+                >Bahamian Payroll in 2022</a
+                >
+            </h2>
+            <p class="summary-description">
+                Technology is improving how businesses have been working
+                over the years. They should pay the workforce on time
+                and according to their working time for any business.
+                When the company has a workforce located on different
+                islands having different brands, unions and payment
+                rules, manual calculations can’t take the workload of HR
+                and administration teams much more time to complete.
+                Thanks to technology, payroll software is here to help
+                small and big businesses manage their payroll.
+            </p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="summary">
+            <div class="summary-date">19th July, 2022</div>
+
+            <h2 class="summary-title">
+                <a
+                        href="https://triblockhr.com/posts/q2-release-recap.html"
+                >What’s New with Triblock HR & Payroll: Q2 Release
+                    Recap</a
+                >
+            </h2>
+            <p class="summary-description">
+                Our aim at TriblockHR is to assemble nearly all the HR &
+                Payroll related functions into a single easy to use
+                system while automating many of those functions, making
+                companies and the people that work in them much more
+                efficient and effective. We are devoted to constantly
+                enhancing our product to enable you to deliver more
+                consistent customer support. Each quarter we concentrate
+                on addressing a few areas to strengthen our product.
+            </p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="summary">
+            <div class="summary-date">13th June, 2022</div>
+
+            <h2 class="summary-title">
+                <a
+                        href="https://triblockhr.com/posts/7-advantages-of-using-recruitment-management-software.html"
+                >Seven Advantages of Using Recruitment Management
+                    Software</a
+                >
+            </h2>
+            <p class="summary-description">
+                HR being the frontline of any enterprise, have a huge
+                set of responsibilities and difficulties at management
+                compared to other departments. Recruitment management is
+                one of them. This article will explain to you the
+                importance and benefits of a recruitment management
+                software for any business vertical and organization.
+            </p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="summary">
+            <div class="summary-date">30th May, 2022</div>
+
+            <h2 class="summary-title">
+                <a
+                        href="https://triblockhr.com/posts/employee-document-management-module.html"
+                >Do You Struggle With Managing Employee
+                    Documents?</a
+                >
+            </h2>
+            <p class="summary-description">
+                A document management system provides security,
+                convenience, and increased productivity to your
+                organization. With TriblockHR, the power to easily
+                manage and disperse documents throughout your company is
+                a huge leap forward in abstracting mundane and
+                repetitive tasks away from managers.
+            </p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="summary">
+            <div class="summary-date">23rd May, 2022</div>
+
+            <h2 class="summary-title">
+                <a
+                        href="https://triblockhr.com/posts/three-reasons-to-say-goodbye-to-your-paper-based-hr-processes.html"
+                >Three Reasons To Say Good Riddance To Your
+                    Paper-based HR Processes</a
+                >
+            </h2>
+            <p class="summary-description">
+                Whether you’re a dedicated HR professional or a small
+                business owner who looks after the people processes,
+                nobody wants to be trapped in one location.
+            </p>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="summary">
+            <div class="summary-date">16th May, 2022</div>
+
+            <h2 class="summary-title">
+                <a
+                        href="https://triblockhr.com/posts/five-tips-to-keep-your-business-data-safe.html"
+                >Payroll Security: Five Tips To Keep Your Business
+                    Data Safe</a
+                >
+            </h2>
+            <p class="summary-description">
+                Payroll security involves taking steps to ensure that
+                sensitive company and employee information isn’t
+                compromised by employees or outside actors, like
+                hackers. Common sources of payroll security issues
+                include time sheet fraud, pay rate alterations, and data
+                breaches—though the exact nature of these varies by the
+                type of business.
+            </p>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="summary">
+            <div class="summary-date">9th May, 2022</div>
+
+            <h2 class="summary-title">
+                <a
+                        href="https://triblockhr.com/posts/why-you-should-upgrade-your-payroll-software.html"
+                >Why You Should Upgrade Your Payroll Software?</a
+                >
+            </h2>
+            <p class="summary-description">
+                Business in the digital age moves at a frantic pace, and
+                it’s down to payroll managers to stay on the pulse of
+                technology to maximise productivity and performance
+                within their department. These days, finding and
+                integrating the ideal payroll software is a core
+                challenge facing companies across every industry.
+            </p>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="summary">
+            <div class="summary-date">2nd May, 2022</div>
+
+            <h2 class="summary-title">
+                <a
+                        href="https://triblockhr.com/posts/five-benefits-of-an-effective-time-management-strategy.html"
+                >Five Benefits of an Effective Employee Time
+                    Management Strategy</a
+                >
+            </h2>
+            <p class="summary-description">
+                It’s true that time is an infinite resource. But in the
+                world of business, it isn’t. While we all have 24 hours
+                in a day (which reset on the next day), every single
+                minute makes a difference between a successful and a
+                failed business.
+            </p>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="summary">
+            <div class="summary-date">29th April, 2022</div>
+
+            <h2 class="summary-title">
+                <a
+                        href="https://triblockhr.com/posts/three-reasons-why-performance-management-is-important.html"
+                >Three Reasons Why Performance Management Is
+                    Important</a
+                >
+            </h2>
+            <p class="summary-description">
+                Performance management is key to getting the most out of
+                your employees. After all, a common statement in line
+                with business success is that your people are your most
+                important asset.
+            </p>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="summary">
+            <div class="summary-date">25th April, 2022</div>
+
+            <h2 class="summary-title">
+                <a
+                        href="https://triblockhr.com/posts/employee-performance-management-module.html"
+                >Do You Have Trouble Scheduling Performance Reviews
+                    With Your Employees?</a
+                >
+            </h2>
+            <p class="summary-description">
+                An organization that seeks to gauge how an employee
+                progresses in their role invests in its greatest asset,
+                people. Scheduling performance reviews at any time allow
+                managers to quickly determine what requirements are
+                necessary for an employee to succeed.
+            </p>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="summary">
+            <div class="summary-date">11th April, 2022</div>
+
+            <h2 class="summary-title">
+                <a
+                        href="https://triblockhr.com/posts/the-5-step-guide-to-time-off-requests.html"
+                >The 5-Step Guide to Time-off Requests</a
+                >
+            </h2>
+            <p class="summary-description">
+                No matter how large your team is or which industry
+                you're in, these steps will help you effectively manage
+                time-off requests.
+            </p>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="summary">
+            <div class="summary-date">4th April, 2022</div>
+
+            <h2 class="summary-title">
+                <a
+                        href="https://triblockhr.com/posts/how-to-maintain-employee-records.html"
+                >How to Maintain Employee Records?</a
+                >
+            </h2>
+            <p class="summary-description">
+                Maintaining employee records is more than a filing
+                cabinet with color-coordinated folders. There is so much
+                information to track and manage for each employee, and
+                doing so only gets more complicated the more people you
+                hire.
+            </p>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="summary">
+            <div class="summary-date">28th March, 2022</div>
+
+            <h2 class="summary-title">
+                <a
+                        href="https://triblockhr.com/posts/when-should-i-get-an-hris-for-my-company.html"
+                >When should I get an HRIS for my company?</a
+                >
+            </h2>
+            <p class="summary-description">
+                HRIS stands for human resource information system or
+                otherwise known as human resource management system
+                (HRMS), which is basically the intertwining of human
+                resources and information technology through human
+                resource (HR) software.
+            </p>
+        </div>
+    </div>
+
+    <!--Divider-->
+    <hr class="border-b-2 border-gray-400 mb-8 mx-4"/>
+
+    <!--Subscribe-->
+    <div class="container px-4">
+        <div
+                class="font-sans bg-gradient-to-t from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 border border-transparent text-base font-medium shadow-sm text-white rounded-lg shadow-xl p-4 text-center"
+        >
+            <h2
+                    class="font-extrabold text-white break-normal text-xl md:text-4xl"
+            >
+                Subscribe to our Newsletter
+            </h2>
+            <h3
+                    class="font-bold break-normal text-white text-sm md:text-base"
+            >
+                Get the latest HR & Payroll insights directly to your
+                inbox.
+            </h3>
+            <div class="w-full text-center pt-2">
+                <div
+                        class="max-w-xl mx-auto p-1 pr-0 flex flex-wrap items-center"
+                >
+                    <a
+                            href="https://cdn.forms-content.sg-form.com/98295d78-3029-11ed-8a47-4ef04d44ae8d"
+                            target="_blank"
+                            rel="noreferrer"
+                            class="flex-1 mt-4 block md:inline-block appearance-none bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border text-white text-base font-semibold tracking-wider uppercase py-4 rounded shadow hover:from-purple-700 hover:to-indigo-700"
+                    >Subscribe now!</a
+                    >
                 </div>
             </div>
-        </footer>
+        </div>
+    </div>
+    <!-- /Subscribe-->
+</div>
+<!--/container-->
 
-        <script src="progress-bar.js"></script>
-    </body>
+<footer class="bg-white mt-6">
+    <div class="container max-w-4xl mx-auto flex py-8">
+        <div class="w-full mx-auto flex flex-wrap">
+            <div class="flex w-full md:w-1/2">
+                <div class="px-8">
+                    <h3 class="font-bold text-gray-900">About</h3>
+                    <p class="py-4 text-gray-600 text-sm">
+                        Triblock HR is meant to make your business
+                        operations more efficient and cost effective by
+                        drastically reducing the time your HR and
+                        Payroll departments spend doing repetitive and
+                        monotonous work while empowering employees
+                        through self service features.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex w-full md:w-1/2">
+                <div class="px-8">
+                    <h3 class="font-bold text-gray-900">Social</h3>
+                    <ul class="list-reset items-center text-sm pt-3">
+                        <li>
+                            <a
+                                    class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
+                                    href="https://www.linkedin.com/company/triblockhr"
+                                    target="_blank"
+                            >Linkedin</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                    class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
+                                    href="https://www.facebook.com/triblockhr"
+                                    target="_blank"
+                            >Facebook</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                    class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
+                                    href="https://www.instagram.com/triblockhr"
+                                    target="_blank"
+                            >Instagram</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="progress-bar.js"></script>
+</body>
 </html>
