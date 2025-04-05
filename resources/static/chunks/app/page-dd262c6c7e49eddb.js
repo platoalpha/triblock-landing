@@ -45,9 +45,9 @@
                   children: (0, t.jsx)(s.default, {
                     alt: 'TriblockHR & Payroll',
                     src: r,
-                    className: 'mx-auto h-15 w-full',
+                    className: 'mx-auto h-20 w-full',
                     width: 250,
-                    height: 100,
+                    height: 175,
                     unoptimized: !0,
                   }),
                 }),

@@ -923,11 +923,23 @@
 }
 @layer components;
 @layer utilities {
+  .visible {
+    visibility: visible;
+  }
   .absolute {
     position: absolute;
   }
+  .fixed {
+    position: fixed;
+  }
   .relative {
     position: relative;
+  }
+  .static {
+    position: static;
+  }
+  .sticky {
+    position: sticky;
   }
   .top-2\/3 {
     top: 66.6667%;
@@ -946,6 +958,12 @@
   }
   .flex {
     display: flex;
+  }
+  .hidden {
+    display: none;
+  }
+  .inline {
+    display: inline;
   }
   .inline-block {
     display: inline-block;
@@ -974,6 +992,9 @@
   .max-w-7xl {
     max-width: var(--container-7xl);
   }
+  .resize {
+    resize: both;
+  }
   .flex-col {
     flex-direction: column;
   }
@@ -985,6 +1006,10 @@
   }
   .scroll-smooth {
     scroll-behavior: smooth;
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
   }
   .bg-white {
     background-color: var(--color-white);
@@ -1038,6 +1063,15 @@
   .antialiased {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+  .blur {
+    --tw-blur: blur(8px);
+  }
+  .blur,
+  .filter {
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,)
+      var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,)
+      var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   .transition {
     transition-property:
@@ -1117,11 +1151,52 @@
     transform: none;
   }
 }
+@property --tw-border-style {
+  syntax: '*';
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-font-weight {
   syntax: '*';
   inherits: false;
 }
 @property --tw-tracking {
+  syntax: '*';
+  inherits: false;
+}
+@property --tw-blur {
+  syntax: '*';
+  inherits: false;
+}
+@property --tw-brightness {
+  syntax: '*';
+  inherits: false;
+}
+@property --tw-contrast {
+  syntax: '*';
+  inherits: false;
+}
+@property --tw-grayscale {
+  syntax: '*';
+  inherits: false;
+}
+@property --tw-hue-rotate {
+  syntax: '*';
+  inherits: false;
+}
+@property --tw-invert {
+  syntax: '*';
+  inherits: false;
+}
+@property --tw-opacity {
+  syntax: '*';
+  inherits: false;
+}
+@property --tw-saturate {
+  syntax: '*';
+  inherits: false;
+}
+@property --tw-sepia {
   syntax: '*';
   inherits: false;
 }
