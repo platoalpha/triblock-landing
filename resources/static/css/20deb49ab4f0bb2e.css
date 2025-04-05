@@ -947,8 +947,14 @@
   .flex {
     display: flex;
   }
+  .inline-block {
+    display: inline-block;
+  }
   .h-15 {
     height: calc(var(--spacing) * 15);
+  }
+  .h-20 {
+    height: calc(var(--spacing) * 20);
   }
   .h-\[0\.58em\] {
     height: 0.58em;

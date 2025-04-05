@@ -15,9 +15,9 @@ export function Header() {
               <Image
                 alt="TriblockHR & Payroll"
                 src={LogoImage}
-                className="mx-auto h-15 w-full"
+                className="mx-auto h-20 w-full"
                 width={250}
-                height={100}
+                height={175}
                 unoptimized={true}
               />
             </Link>
